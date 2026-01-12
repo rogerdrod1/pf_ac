@@ -28,3 +28,6 @@ dist-ssr
 
 # Temporary files
 tmpclaude-*
+
+.vercel
+.env*.local

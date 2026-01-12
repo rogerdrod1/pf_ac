@@ -1,112 +1,166 @@
-# Welcome to your Lovable project
+# PF Air Conditioning - Professional HVAC Services Website
 
-## Project info
+A modern, responsive website for a professional HVAC services company, built with cutting-edge web technologies to deliver exceptional performance and user experience.
 
-**URL**: https://lovable.dev/projects/c428472b-4b9f-473f-ac70-279dacea9f6b
+## Overview
 
-## How can I edit this code?
+This website showcases comprehensive HVAC services including heating, cooling, and ventilation solutions. Designed with user experience and conversion optimization in mind, it features intuitive navigation, engaging visuals, and a streamlined contact process to help customers easily connect with your services.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+- **Responsive Design** - Seamlessly adapts to all devices (desktop, tablet, mobile)
+- **Modern UI Components** - Built with shadcn/ui for consistent, accessible design
+- **Service Showcase** - Dedicated sections highlighting heating, cooling, and ventilation services
+- **Contact Integration** - Easy-to-use contact form for customer inquiries
+- **Fast Performance** - Optimized with Vite for lightning-fast load times
+- **SEO Ready** - Structured for search engine optimization
+- **Type-Safe** - Built with TypeScript for reliability and maintainability
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/c428472b-4b9f-473f-ac70-279dacea9f6b) and start prompting.
+## Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **[React](https://react.dev/)** - Modern UI library for building interactive interfaces
+- **[TypeScript](https://www.typescriptlang.org/)** - Type-safe JavaScript for robust code
+- **[Vite](https://vitejs.dev/)** - Next-generation frontend build tool
+- **[Tailwind CSS](https://tailwindcss.com/)** - Utility-first CSS framework
+- **[shadcn/ui](https://ui.shadcn.com/)** - High-quality, accessible UI components
+- **[React Router](https://reactrouter.com/)** - Client-side routing
 
-**Use your preferred IDE**
+## Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js 18+ and npm (or yarn/pnpm/bun)
+- Git
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. Clone the repository:
+```bash
+git clone https://github.com/rogerdrod1/pf_ac.git
+cd pf_ac
+```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Install dependencies:
+```bash
+npm install
+```
 
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open your browser and navigate to `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Available Scripts
 
-**Use GitHub Codespaces**
+- `npm run dev` - Start development server with hot reload
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint to check code quality
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+pf_ac/
+├── src/
+│   ├── assets/          # Images and static assets
+│   ├── components/      # React components
+│   │   ├── ui/         # shadcn/ui components
+│   │   ├── Header.tsx
+│   │   ├── HeroSection.tsx
+│   │   ├── ServicesSection.tsx
+│   │   ├── WhyChooseSection.tsx
+│   │   ├── ContactSection.tsx
+│   │   └── Footer.tsx
+│   ├── hooks/          # Custom React hooks
+│   ├── lib/            # Utility functions
+│   ├── pages/          # Page components
+│   ├── App.tsx         # Main app component
+│   ├── main.tsx        # Application entry point
+│   └── index.css       # Global styles
+├── public/             # Public static files
+└── package.json
+```
 
-This project is built with:
+## Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The site is deployed on [Vercel](https://vercel.com/) with automatic deployments on every push to the main branch.
 
-## How can I deploy this project?
+To deploy your own instance:
 
-Simply open [Lovable](https://lovable.dev/projects/c428472b-4b9f-473f-ac70-279dacea9f6b) and click on Share -> Publish.
+1. Fork this repository
+2. Sign up for a [Vercel account](https://vercel.com/signup)
+3. Import your forked repository
+4. Configure your custom domain (optional)
+5. Deploy!
 
-## Can I connect a custom domain to my Lovable project?
+## Customization
 
-Yes, you can!
+### Updating Content
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- **Company Information** - Edit components in `src/components/`
+- **Services** - Modify `src/components/ServicesSection.tsx`
+- **Contact Details** - Update `src/components/ContactSection.tsx` and `src/components/Footer.tsx`
+- **Images** - Replace files in `src/assets/` and `public/`
+- **Styling** - Customize colors and themes in `tailwind.config.ts`
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Adding New Pages
+
+1. Create a new component in `src/pages/`
+2. Add the route in `src/App.tsx`
+3. Update navigation in `src/components/Header.tsx`
+
+## Roadmap
+
+### High Priority
+- [ ] **CRM/Form Integration** - Connect contact form to capture leads
+  - Options: Formspree, FormSubmit, HubSpot, or HVAC-specific CRMs
+  - Location: `src/components/ContactSection.tsx`
+
+### Enhancements
+- [ ] Google Analytics integration
+- [ ] Google Maps showing service area
+- [ ] Customer testimonials section
+- [ ] Before/after photo gallery
+- [ ] Live chat widget
+- [ ] Schema markup for local SEO
+- [ ] FAQ section
+- [ ] Blog for HVAC tips and local content
+- [ ] Online booking/scheduling system
+- [ ] Financing options page
+
+### SEO & Marketing
+- [ ] Google Business Profile integration
+- [ ] Enhanced meta tags and Open Graph images
+- [ ] Structured data for local business
+- [ ] Google Reviews widget
+
+### Technical
+- [ ] Form validation and error handling
+- [ ] Loading states and toast notifications
+- [ ] Email notifications for form submissions
+- [ ] reCAPTCHA spam prevention
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is private and proprietary.
+
+## Support
+
+For questions or support, please contact through the website contact form or open an issue in this repository.
 
 ---
 
-## Pending Tasks & Future Improvements
-
-### High Priority
-- [ ] **CRM/Form Integration** - Connect contact form to receive leads online
-  - **Recommended Quick Start:** Formspree or FormSubmit for immediate lead capture
-  - **Long-term Solution:** Integrate with HVAC-specific CRM (Housecall Pro, Jobber, or ServiceTitan)
-  - **Mid-tier Option:** HubSpot Free CRM for contact management
-  - **Location:** Contact form in `src/components/ContactSection.tsx`
-
-### Additional Improvements to Consider
-- [ ] Add Google Analytics for tracking visitor behavior
-- [ ] Implement Google Maps integration showing service area
-- [ ] Add customer testimonials/reviews section
-- [ ] Create before/after photo gallery
-- [ ] Add live chat widget for instant customer support
-- [ ] Implement schema markup for local SEO
-- [ ] Add FAQ section for common HVAC questions
-- [ ] Create blog section for HVAC tips and local content
-- [ ] Add seasonal promotion banners
-- [ ] Implement online booking/scheduling system
-- [ ] Add financing options page
-- [ ] Create service guarantee/warranty page
-
-### SEO & Marketing
-- [ ] Set up Google Business Profile integration
-- [ ] Add meta tags and Open Graph images
-- [ ] Create sitemap and robots.txt
-- [ ] Implement structured data for local business
-- [ ] Add Google Reviews widget
-
-### Technical Enhancements
-- [ ] Add form validation and error handling
-- [ ] Implement loading states for form submission
-- [ ] Add success/error toast notifications
-- [ ] Set up email notifications for form submissions
-- [ ] Add reCAPTCHA to prevent spam
+Built with ❤️ for exceptional HVAC services
